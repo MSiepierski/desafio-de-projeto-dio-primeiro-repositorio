@@ -1,0 +1,36 @@
+# Git por baixo dos panos
+
+## Principais anotações
+
+- Sha1 = Algoritmo de encriptação, gera conjunto de caracteres de 40 dígitos. 
+- "comando openssl sha1 + nome do arquivo" - encripta o arquivo
+
+### Blobs
+
+- Contém metadados do git dentro, necessário para manter a encriptação. 
+- Os metadados são dados como o tipo do objeto, tamanho da string, tamanho do arquivo, etc.
+
+### Trees
+
+- Armazenam os blobs, também contém metadados. 
+
+### Commit
+
+- Agrupa tudo e ao mesmo tempo também se insere texto e autor, sendo assim, pode escrevem mensagens. 
+
+### Chave SSH
+
+- É uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas. 
+
+### Token de acesso pessoal
+
+- É o que dá acesso para a URL, podendo ser temporário. O caminho no github para gerar uma token de acesso pessoal é ir em settings -> developer settings - > generate new key.
+
+#### Arquivos " Untracked, Tracked, Unmodifieds, Modifieds, Staged"
+
+- **Untracked** - São arquivos que não temos ciência deles. Remover um arquivo, o torna novamente untracked.
+- **Tracked** - São arquivos que possuímos ciência dos mesmos. Ou seja, engloba todos os arquivos Unmodifieds, modifieds e stageds.
+
+- **Unmodified** - Como o nome já diz, são arquivos que ainda não foram modificados. Quando se utiliza um comando "git add" o arquivo criado encontra-se neste estágio, pois ainda não foi modificado. Ao commitar um arquivo, ele retorna para o estágio Unmodified
+- **Modified** - Ao se editar o arquivo, seja colocar uma vírgula ou modificar o arquivo inteiro, ele passa para este estágio, ficando modificado, ou seja, não será reconhecido como o arquivo inicial.
+- **Staged** - Área a qual o arquivo está aguardando para algo, ou seja, ele está se preparando para fazer parte de um commit.
