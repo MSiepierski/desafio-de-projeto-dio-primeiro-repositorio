@@ -27,4 +27,4 @@
 
 ### Markdown ###
 
-[Site para demonstrar as simbologias utilizadas no Markdown] (https://www.markdownguide.org/basic-syntax/)
+[Site para visualização de Markdown basica](https://www.markdownguide.org/basic-syntax/)
