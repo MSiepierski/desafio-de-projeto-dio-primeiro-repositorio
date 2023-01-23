@@ -24,3 +24,7 @@
 - **git push origin master** - "Leva" o repositório da máquina local para o servidor remoto.
 - **git pull origin master** - "Puxa" o repositório do servidor remoto para a máquina local. 
 - **git clone + URL** - "Puxa" e "clona" um repositório do github para a máquina local. 
+
+### Markdown ###
+
+[Site para demonstrar as simbologias utilizadas no Markdown] (https://www.markdownguide.org/basic-syntax/)
